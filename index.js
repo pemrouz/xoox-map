@@ -1,1 +1,1 @@
-module.exports = fn => next => (acc, v) => next(acc, fn(v)) 
+module.exports = fn => next => v => next(fn(v)) 
